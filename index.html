@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szkoła Podstawowa nr 3 w Blachowni</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.8;
+            overflow-x: hidden;
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            animation: slideIn 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 35px;
+            font-size: 1.2em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #FFD700;
+            color: #343a40;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 20px;
+            margin: 50px auto;
+            max-width: 1100px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        section h2 {
+            font-size: 3em;
+            font-weight: 700;
+            color: #4CAF50;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-family: 'Roboto', sans-serif;
+            border-bottom: 4px solid #4CAF50;
+            padding-bottom: 15px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: #555;
+        }
+
+        section ul {
+            margin-left: 30px;
+            font-size: 1.1em;
+            list-style-type: square;
+            color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .gallery img {
+            width: 30%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 15px;
+            margin-top: 60px;
+            animation: slideIn 1s ease-out;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for the latest event section */
+        .event-section {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-section img {
+            width: 300px;
+            height: auto;
+            border-radius: 12px;
+            margin-right: 30px;
+        }
+
+        .event-text {
+            max-width: 700px;
+        }
+
+        .event-date {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .event-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+            letter-spacing: 0.5px;
+        }
+
+        .event-description strong {
+            color: #FFD700;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Szkoła Podstawowa nr 3 w Blachowni</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">O szkole</a></li>
+                <li><a href="#events">Najnowsze wydarzenia</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>O szkole</h2>
+<p>Szkoła Podstawowa nr 3 w Blachowni to jedna z wiodących placówek edukacyjnych w regionie. Od momentu powstania szkoła stawia na rozwój uczniów w różnych aspektach – nie tylko w zakresie nauki, ale także na rozwój społeczny, emocjonalny oraz kreatywny. Nasi uczniowie są przygotowani do życia w dynamicznie zmieniającym się świecie dzięki odpowiednio dostosowanemu programowi nauczania, który obejmuje zarówno przedmioty ogólnokształcące, jak i szereg zajęć pozalekcyjnych.</p>
+        
+        <h3>Nasze cele i misja:</h3>
+        <p>Naszym celem jest wszechstronny rozwój uczniów, którzy w przyszłości będą gotowi na wyzwania współczesnego świata. Oferujemy nowoczesne metody nauczania, które kładą duży nacisk na samodzielne myślenie, kreatywność i współpracę. Wspieramy dzieci w ich pasjach i zainteresowaniach, pomagając im rozwijać skrzydła w bezpiecznym, pełnym zrozumienia i wsparcia środowisku.</p>
+        
+        <h3>Nasze atuty:</h3>
+        <ul>
+            <li>Profesjonalna kadra nauczycielska z doświadczeniem i pasją do pracy z dziećmi.</li>
+            <li>Nowoczesne sale lekcyjne, laboratoria oraz świetlica z bogatym wyposażeniem dydaktycznym.</li>
+            <li>Szeroka oferta zajęć pozalekcyjnych: od sportu po sztuki plastyczne i języki obce.</li>
+            <li>Liczące się osiągnięcia naszych uczniów na poziomie regionalnym oraz krajowym w różnych konkursach edukacyjnych.</li>
+            <li>Programy stypendialne dla najzdolniejszych uczniów oraz wsparcie dla dzieci ze specjalnymi potrzebami edukacyjnymi.</li>
+        </ul>
+        
+        <h3>Projekty i wydarzenia:</h3>
+        <p>W naszej szkole organizowane są różnorodne projekty edukacyjne, wycieczki, festiwale oraz dni tematyczne, które angażują uczniów do wspólnej nauki i zabawy. Nasi uczniowie biorą także udział w międzyszkolnych i regionalnych zawodach sportowych, konkursach matematycznych, literackich oraz plastycznych.</p>
+    </section>
+
+    <!-- Najnowsze wydarzenia section -->
+    <section id="events">
+        <h2>Najnowsze wydarzenia</h2>
+        <div class="event-section">
+            <img src="event.jpg" alt="Szlachetna Paczka Event">
+            <div class="event-text">
+                <p class="event-date">21 listopada 2024</p>
+                <p class="event-description">
+                    <strong>KOCHANI!❤</strong> Nasza Szkoła i Przedszkole przystąpiły do akcji Szlachetna Paczka 🎁. Wierzymy, że z Waszą pomocą uda się nam sprawić radość p. Krystynie i jej rodzinie oraz pomóc im w dobrym i spokojnym przeżyciu nadchodzących świąt🎄. WSZYSTKIM DARCZYŃCOM JUŻ TERAZ BARDZO MOCNO DZIĘKUJEMY!❤🙂 Nasza akcja potrwa do 9 grudnia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Zdjęcie szkoły 1">
+            <img src="image2.jpg" alt="Zdjęcie szkoły 2">
+            <img src="image3.jpg" alt="Zdjęcie szkoły 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Adres: Blachownia, ul. Szkolna 1</p>
+        <p>Telefon: +48 123 456 789</p>
+        <p>Email: <a href="mailto:kontakt@sp3blachownia.pl">kontakt@sp3blachownia.pl</a></p>
+        <p>Znajdź nas na Facebooku: <a href="https://www.facebook.com/sp3blachownia" target="_blank">Szkoła Podstawowa nr 3 w Blachowni</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Szkoła Podstawowa nr 3 w Blachowni. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
