@@ -20,7 +20,6 @@
             background-color: #f7f7f7;
             color: #333;
             line-height: 1.8;
-            overflow-x: hidden;
             font-size: 16px;
             padding: 0 20px;
         }
@@ -221,6 +220,35 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsywność dla mniejszych ekranów */
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 45%;
+            }
+
+            header h1 {
+                font-size: 3em;
+            }
+
+            section h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul li {
+                margin-right: 20px;
+            }
+        }
         
     </style>
 </head>
@@ -239,22 +267,18 @@
 
     <section id="about">
         <h2>O szkole</h2>
-<p>Szkoła Podstawowa nr 3 w Blachowni to jedna z wiodących placówek edukacyjnych w regionie. Od momentu powstania szkoła stawia na rozwój uczniów w różnych aspektach – nie tylko w zakresie nauki, ale także na rozwój społeczny, emocjonalny oraz kreatywny. Nasi uczniowie są przygotowani do życia w dynamicznie zmieniającym się świecie dzięki odpowiednio dostosowanemu programowi nauczania, który obejmuje zarówno przedmioty ogólnokształcące, jak i szereg zajęć pozalekcyjnych.</p>
-        
+        <p>Szkoła Podstawowa nr 3 w Blachowni to jedna z wiodących placówek edukacyjnych w regionie. Od momentu powstania szkoła stawia na rozwój uczniów w różnych aspektach...</p>
+
         <h3>Nasze cele i misja:</h3>
-        <p>Naszym celem jest wszechstronny rozwój uczniów, którzy w przyszłości będą gotowi na wyzwania współczesnego świata. Oferujemy nowoczesne metody nauczania, które kładą duży nacisk na samodzielne myślenie, kreatywność i współpracę. Wspieramy dzieci w ich pasjach i zainteresowaniach, pomagając im rozwijać skrzydła w bezpiecznym, pełnym zrozumienia i wsparcia środowisku.</p>
-        
+        <p>Naszym celem jest wszechstronny rozwój uczniów, którzy w przyszłości będą gotowi na wyzwania współczesnego świata...</p>
+
         <h3>Nasze atuty:</h3>
         <ul>
-            <li>Profesjonalna kadra nauczycielska z doświadczeniem i pasją do pracy z dziećmi.</li>
-            <li>Nowoczesne sale lekcyjne, laboratoria oraz świetlica z bogatym wyposażeniem dydaktycznym.</li>
-            <li>Szeroka oferta zajęć pozalekcyjnych: od sportu po sztuki plastyczne i języki obce.</li>
-            <li>Liczące się osiągnięcia naszych uczniów na poziomie regionalnym oraz krajowym w różnych konkursach edukacyjnych.</li>
-            <li>Programy stypendialne dla najzdolniejszych uczniów oraz wsparcie dla dzieci ze specjalnymi potrzebami edukacyjnymi.</li>
+            <li>Profesjonalna kadra nauczycielska...</li>
+            <li>Nowoczesne sale lekcyjne...</li>
+            <li>Szeroka oferta zajęć pozalekcyjnych...</li>
+            <li>Liczące się osiągnięcia naszych uczniów...</li>
         </ul>
-        
-        <h3>Projekty i wydarzenia:</h3>
-        <p>W naszej szkole organizowane są różnorodne projekty edukacyjne, wycieczki, festiwale oraz dni tematyczne, które angażują uczniów do wspólnej nauki i zabawy. Nasi uczniowie biorą także udział w międzyszkolnych i regionalnych zawodach sportowych, konkursach matematycznych, literackich oraz plastycznych.</p>
     </section>
 
     <!-- Najnowsze wydarzenia section -->
@@ -265,15 +289,7 @@
             <div class="event-text">
                 <p class="event-date">21 listopada 2024</p>
                 <p class="event-description">
-                    <strong>KOCHANI!❤</strong> Nasza Szkoła i Przedszkole przystąpiły do akcji Szlachetna Paczka 🎁. Wierzymy, że z Waszą pomocą uda się nam sprawić radość p. Krystynie i jej rodzinie oraz pomóc im w dobrym i spokojnym przeżyciu nadchodzących świąt🎄. WSZYSTKIM DARCZYŃCOM JUŻ TERAZ BARDZO MOCNO DZIĘKUJEMY!❤🙂 Nasza akcja potrwa do 9 grudnia.
-                </p>
-            </div>
-            <img src="event2.jpg" alt="Szlachetna Paczka Event">
-            <div class="event-text">
-                <p class="event-date">21 listopada 2024</p>
-                <p class="event-description">
-                    <strong>16 października obchodzimy Europejski Dzień Przywracania Czynności Serca.</strong> Z tej okazji Fundacja WOŚP po raz kolejny zorganizowała akcję bicia rekordu Guinessa w resuscytacji krążeniowo-oddechowej. To część Programu Edukacyjnego „Ratujemy i Uczymy Ratować”, mającego na celu popularyzację nauki udzielania pierwszej pomocy wśród najmłodszych. Do bicia tegorocznego rekordu dołączyli także przedszkolaki i uczniowie z Zespołu
-                </p>
+                    <strong>KOCHANI!❤</strong> Nasza Szkoła i Przedszkole przystąpiły do akcji Szlachetna Paczka 🎁. Wierzymy, że z Waszą pomocą uda się nam sprawić radość p. Krystynie i jej rodzinie...</p>
             </div>
         </div>
         
